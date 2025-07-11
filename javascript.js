@@ -70,8 +70,8 @@ const choices = document.querySelectorAll("button");
 
 choices.forEach(choice => {
     choice.addEventListener("click", (e) => {
-        trackScore();
         playRound(e.target.textContent.toLowerCase(), getComputerChoice());
+        trackScore();
     })
 });
 
